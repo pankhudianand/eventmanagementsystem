@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading{
+            display: block;
+            height:50px;
+            width:734px;
+            padding: 19px 34px 17px 500px;
+            margin:-1%;
+            background-image: url("pexels-miguel-á-padriñán-19670.jpg");
+            background-size:cover;
+            color:rgba(8, 47, 56, 0.538);
+            font-size: 40px;
+            font-weight:bolder;
+        }
+
+        .img{
+            display:block;
+            margin-top:12px;
+            margin-left: -1%;
+            margin-right: -1%;
+            width:300px;
+            
+        }
+
+        {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {
+    display: none;
+    margin-top: 12px;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin:-1%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 55px;
+  font-weight:bolder;
+  font-style: italic;
+  margin-left:200px;
+
+  position: absolute;
+  top: 358px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.image{
+    height:635px;
+    width:1268px;
+}
+
+.theory{
+  font-size:20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.lower{
+  float:right;
+  margin-top: 0px;
+}
+.list{
+  font-size: large;
+}
+li{
+  margin-bottom: 8px;
+}
+
+.lowth{
+  margin-top: 63px;
+}
+    </style>
+</head>
+<body>
+    <p class="heading">BACHELORS PARTY </p>
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+         
+          <img src="PIC.jpg" class="image">
+          <div class="text">YOUR EVENT. PERFECT.</div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="Bachelor-Party-Planner23_34_42.jpg" class="image">
+          <div class="text"> YOUR EVENT. PERFECT.</div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="PIC.jpg" class="image">
+          <div class="text">YOUR EVENT. PERFECT.</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+     <p class="theory">
+      Making the Last Party of Bachelors Life Memorable
+We are experienced Bachelor and Bachelorette Party planners with a long record of satisfied customers who’ve relied on us to plan the satisfactory time in their lives. We have connections and partners in each destination city and can make your dream weekend emerge as a reality. Being a bachelor party organisers in Delhi, India we try to give our clients a best deal so that they can enjoy their day before wedding.
+<br><br><br>
+Marriage is truly the quality bond in lifestyles that everybody wants to get tied with, but not the whole thing remains the same when someone gets married. Marriage is the sweetest bond but along with this, it is an exceptional responsibility as nicely. Well, before coming into the arena complete of obligations a celebration to turn out to be the bachelor existence superbly is required, isn’t it? Whether the bride or the groom, each deserve a celebration with their gang to experience the last section of their bachelor or bachelorette life and that birthday party is well called a bachelor’s birthday celebration or a bachelorette or hens birthday celebration. We’re one of the best bachelor party organisers in Delhi making your prewedding bachelor parties a memorable ones.
+     </p>
+    <br><img src="why-different.jpg" alt="picture" class="lower">
+     <p class="lowth">
+      
+     <h1> Our Mission</h1>
+     
+<h4>Our goals are simple:</h4>
+
+<ul class="list">
+ <li>To save the hen do organiser time</li>
+ <li>To save the hen do organiser hassle</li>
+ <li>To save the whole group money</li>
+ <li>To give the bride-to-be the best weekend ever!</li>
+ <li>Then unleash our victory dance!</li>
+</ul>
+
+     </p>
+</body>
+</html>

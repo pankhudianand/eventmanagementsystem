@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DREAM DECOR</title>
+    <style>
+      body {
+        background-image: url("back2.jpg");
+        background-repeat: no-repeat;
+        /* width: 100%; */
+        background-size: cover;
+      }
+      .nav {
+        border: 2PX solid red;
+        background-image: url("/img/pexels-anete-lusina-6331085.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        border-radius: 4px;
+        margin:-1%;
+      }
+
+      .navbar li {
+        display: inline-block;
+        margin-top: 18px;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: rgb(61, 45, 4);
+        font-size: x-large;
+        padding:0px;
+        text-align: center;
+        /* left: 25%; */
+      }
+
+      .navbar li a:hover,
+      .navbar li a.active {
+        text-decoration: solid underline;
+        color: rgb(221, 154, 165);
+      }
+      .active {
+        left: 30%;
+      }
+      .navbar button {
+        border: 3px solid black;
+        border-radius: 6px;
+        background-color: whitesmoke;
+        position: absolute;
+        right: 5%;
+        text-align: center;
+        font-size: large;
+        margin-top: 18px;
+      }
+      .navbar button:hover {
+        background-color: rgb(221, 154, 165);
+        text-decoration: solid;
+      }
+      .symbol {
+        filter: invert(100%);
+        float: left;
+      }
+
+      .dropbtn {
+        text-decoration: none;
+        color: rgb(156, 13, 13);
+        padding: 0px;
+        font-size:30px;
+        
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+  
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        width: 20PX;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #c9a6c1;
+      }
+
+      .tab{
+        margin-left:150px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <ul class="navbar">
+          <li class="symbol"><img src="logof.png" style="width: 60px" /></li>
+          <li><a href="" class="active">About</a><span class="tab"></span></li>
+          <li>  
+            <div class="dropdown">
+              <a class="dropbtn">SERVICES</a>
+              <div class="dropdown-content">
+                <a href="#">BACHELOR Party</a>
+                <a href="#">OFFICIAL MEETING</a>
+                <a href="#">MUSIC FESTIVAL</a>
+              </div>
+            </div><span class="tab"></span>
+          </li>
+          <li><a href="">Gallery</a><span class="tab"></span></li>
+          <li><a href="">Themes</a><span class="tab"></span></li>
+          <a href="login.html"><button class="btn">Login</button></a>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>

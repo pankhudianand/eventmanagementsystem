@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen and (max-width:1100px)" href="formresponsive.css">
+    <title>Document</title>
+    <style>
+      html {
+        height: 100px;
+        background-image: url("formback.png");
+        background-color: #322c2c;
+        width:100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    
+      form {
+        box-sizing: border-box;
+        
+        color: rgb(224, 37, 37);
+      }
+      .para {
+        margin-left: 1%;
+        display: inline-block;
+        font-size:25px;
+        font-weight: bolder;
+      }
+
+      .tab {
+        margin-left: 30px;
+      }
+
+      .tab1{
+        margin-left: 268px;
+      }
+      .tab2 {
+        margin-left: 140px;
+      }
+      .tab3 {
+        margin-left: 220px;
+      }
+      .tab4 {
+        margin-left: 100px;
+      }
+      #a {
+        color:white;
+        width: 220px;
+        height:40px;
+        padding: 5px 2px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-image: none;
+        background-color: #322C2C;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      }
+      #b {
+        color:white;
+        width: 220px;
+        height:40px;
+        padding: 5px 2px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-color: #322C2C;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+      }
+      #c {
+        color:white;
+        width: 220px;
+        height:40px;
+        padding: 5px 2px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-color: #322C2C;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+      }
+      #d {
+        color:white;
+        width: 220px;
+        height:40px;
+        padding: 5px 2px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-color: #322C2C;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+      }
+      textarea {
+        color:white;
+        width: 600px;
+        height: 150px;
+        border: 2px solid black;
+        background-color: #322C2C;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+      }
+      .fieldset {
+        display: block;
+        width: 500px;
+        margin-left: 25%;
+      }
+      .p1 {
+        background-image: linear-gradient(to right, white , grey);
+        
+        padding: 14px 39px 8px 523px;
+        height: 50px;
+        color: rgb(7, 7, 7);
+        font-size: 40px;
+        margin-left: -1%; 
+        margin-top: -1%;
+        width:705px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .p3 {
+        
+        width: 100%;
+        height: 30px;
+        text-align:center;
+        color:white;
+        font-size:30px;
+        margin-top:-17px;
+
+      }
+
+      .p2{
+        text-align:center;
+        font-size:45px;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-weight:bold;
+        color:rgb(255, 255, 255);
+      }
+      .p2a{
+        text-align:center;
+        font-size:45px;
+        margin-top:55px;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-weight:bold;
+        color:rgb(197, 51, 51);
+      }
+      .map{
+        height:250px;
+        width:265px;
+        
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+      
+      .video{
+        height:260px;
+        width:329px;
+      }
+      
+      .map1{
+        height:250px;
+        width:265px;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+      .pi{
+        background-color: white;
+        margin:-1%; 
+        margin-top:30px;
+        width:1268px;
+      }
+      .button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+  width: 150px;
+
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left:200px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.gmap{
+  width:1268px; 
+  margin-left:-1%;
+  margin-right:-1%;
+  margin-bottom:-1%;
+  margin-top:-1%;
+
+}
+
+.circle{
+  border-radius: 50%;
+    color: #313131;
+    border: 1px solid #f1f1f1;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    padding: 10px;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <p class="p1">CONTACT US</p>
+    <section class="formconatiner">
+      <div class="form-contain">
+    <p class="p2 img">PARTY <span class="p2a">ENQUIRY</span> FORM</p>
+    <p class="p3 img">Please fill out the Party Enquiry Form below.<br> We will try to answer your
+      enquiry as quick as possible.</p>
+
+    <br />
+
+    <form class="img" method="post" action="contact.php">
+      <fieldset class="fieldset">
+       
+
+        <p class="para">
+          Name :<span class="tab1"></span>
+          Your Number:
+        </p>
+        <br />
+        <input type="text" id="a" placeholder="Your Name" name="name" /><span class="tab2"></span
+        ><input type="tel" id="b" name="phone" placeholder="Your Number" />
+        <br />
+        <p class="para">Your Email:<span class="tab3"></span>Enquired for:</p>
+        <br />
+        <input type="email" id="c" placeholder="Your email" name="email"/><span class="tab2"></span
+        ><input type="text" id="d" placeholder="Event Name" name = "event"/>
+        <br />
+        <p class="para">Your message:</p>
+        <br />
+        <textarea name="message" id="e"> </textarea>
+        <button class="button"><span>SUBMIT</span></button>
+      </fieldset>
+    </form>
+    </div>
+    </section>
+
+    <div class="pi">
+      <img src="ation.png" class="map1"><span class="tab"></span>
+      <img src="ation (1).jpg" class="map"><span class="tab"></span>
+      <img src="ation.jpg " class="map"><span class="tab"></span>
+      <a href="#">
+      <video class="map video" autoplay muted>
+        <source src="video.mp4" type="video/mp4">
+
+      </video>
+    </a>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+    <p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7014.077694771181!2d77.50178662318903!3d28.478376710556475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea6513624ebd%3A0xc472b07f2822a6df!2sBeta%20I%2C%20Greater%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1667646743045!5m2!1sen!2sin" width="600" height="450" style="border:0; width: 1268px; margin: -1%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>
